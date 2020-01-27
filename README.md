@@ -19,6 +19,7 @@ Devin Kendall | devin@dkportfolio.com
 #Notes
 
 * Used all function components thanks to React's new hooks. State management is being handled by React's useContext hook. 
+* Sessions are cookied and stored in the DB with the cart items
 * Used BEM naming convention. 
 * Placeholder elements will display until child components mount.
 * Serving images from a CDN.
