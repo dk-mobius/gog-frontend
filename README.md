@@ -2,11 +2,12 @@ Hi there! Thank you for taking the time to review this solution to the provided 
 
 This prototype is up and running here: https://gog-test.netlify.com/
 
-My goal is to make clean reusable code that would be able to be expanded on.
+My goal is to make clean reusable code that can be expanded upon.
 For this reason I chose to build with React and use a BEM style naming convention in components.
 The front end is completely decoupled from the backend allowing for the rapid development.
 Please reach out if you have any questions.
-Thanks!
+
+Thanks!git 
 
 Devin Kendall | devin@dkportfolio.com
 
