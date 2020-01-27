@@ -11,13 +11,13 @@ Thanks!git
 
 Devin Kendall | devin@dkportfolio.com
 
-#Stack
+##Stack
 
 * The UI is running on React. 
 * Express JS is powering the backened and can be found here: https://github.com/dk-mobius/gog-backend
 * Express is connecting to a MongoDB database to retrieve product info, retrieve user, and store user session.
 
-#Notes
+##Notes
 
 * Used all function components thanks to React's new hooks. State management is being handled by React's useContext hook. 
 * Sessions are cookied and stored in the DB with the cart items
@@ -25,7 +25,7 @@ Devin Kendall | devin@dkportfolio.com
 * Placeholder elements will display until child components mount.
 * Serving images from a CDN.
 
-#Local
+##Local
 
 If you wish to run the front end locally, make sure you have nodejs installed on your machine: https://nodejs.org/ 
 
