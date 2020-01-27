@@ -1,0 +1,38 @@
+.product-card {
+  @extend .base-card;
+  width: 100%;
+  max-width: 19.6rem;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  img {
+    @extend .base-image--fluid;
+  }
+  &__info {
+    position: relative;
+    box-sizing: border-box;
+    height: 7.5rem;
+    padding: 0.8rem;
+    .product-card--owned & {
+      opacity: 0.5;
+      .button {
+        opacity: 0.75;
+      }
+    }
+  }
+  &__title {
+    height: 5rem;
+  }
+  &__footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.7rem;
+  }
+  &__discount {
+    @extend .base-tag;
+  }
+}

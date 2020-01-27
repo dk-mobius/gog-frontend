@@ -1,0 +1,35 @@
+.grid {
+  width: 100%;
+  max-width: map_get($dimensions, max-width);
+  display: block;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  max-width: map_get($dimensions, max-width);
+  margin: 0 auto $base-margin auto;
+  display: flex;
+  justify-content: space-between;
+  &--fluid {
+    max-width: none;
+  }
+  &--4 {
+    > div {
+      flex-basis: 25%;
+      margin-right: $base-margin;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &--5 {
+    > div {
+      flex-basis: 20%;
+      margin-right: $base-margin;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

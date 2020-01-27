@@ -1,0 +1,7 @@
+.placeholder-card {
+  @extend .base-card;
+  @extend .placeholder-gradient;
+  width: 100%;
+  max-width: 19.6rem;
+  height: 18.5rem;
+}

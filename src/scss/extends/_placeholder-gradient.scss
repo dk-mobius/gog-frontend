@@ -1,0 +1,13 @@
+.placeholder-gradient {
+  background: linear-gradient(90deg, map_get($color, place-holder), map_get($color, bg-gradient), map_get($color, place-holder));
+  background-size: 1200%;
+  animation: placeholder-gradient 3s ease infinite;
+  @keyframes placeholder-gradient {
+    0% {
+      background-position: 0;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+}

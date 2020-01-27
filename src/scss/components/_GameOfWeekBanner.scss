@@ -1,0 +1,6 @@
+.gow-banner {
+  @extend .base-card;
+  img {
+    @extend .base-image--fluid;
+  }
+}

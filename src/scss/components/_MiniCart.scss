@@ -1,0 +1,68 @@
+.mini-cart {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  &__toggle {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: map_get($dimensions_scheme, site-header-height);
+    height: map_get($dimensions_scheme, site-header-height);
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+    border-top: none;
+    border-bottom: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    span {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 1.6rem;
+      height: 1.5rem;
+      display: inline;
+    }
+    .is-active & {
+      background-color: map_get($color, panel-background);
+    }
+  }
+
+  &__panel {
+    position: absolute;
+    top: map_get($dimensions_scheme, site-header-height);
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    max-width: 37rem;
+    height: 60rem;
+    background-color: map_get($color, panel-background);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+    border-top: none;
+    display: none;
+
+    .is-active & {
+      display: block;
+    }
+  }
+  &__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  &__amount {
+    text-align: right;
+    flex-basis: 30%;
+  }
+}

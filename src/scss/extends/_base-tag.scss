@@ -1,0 +1,7 @@
+.base-tag {
+  background-color: map_get($color, secondary);
+  border-radius: $button-radius;
+  padding: 0.4rem 0.8rem;
+  color: map_get($color, reversed-text);
+  font-size: 1.3rem;
+}

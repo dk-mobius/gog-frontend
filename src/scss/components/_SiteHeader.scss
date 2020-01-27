@@ -1,0 +1,28 @@
+.site-header {
+  width: 100%;
+  margin-bottom: $base-margin*2;
+  &__bar {
+    width: 100%;
+    height: map_get($dimensions_scheme, site-header-height);
+    background-color: map_get($color, card-background);
+    background-image: linear-gradient(#EEEEEE, #DDDDDD);
+    margin-top: map_get($dimensions_scheme, top-gap);
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.3);
+  }
+  &__container {
+    position: relative;
+    width: 100%;
+    max-width: map_get($dimensions,max-width) + 0.4rem;
+    margin: 0 auto;
+  }
+  &__gradient {
+    width: 100%;
+    height: 42rem;
+    position: absolute;
+    top: map_get($dimensions_scheme,site-header-height) + map_get($dimensions_scheme,top-gap);
+    left: 0;
+    background-image: linear-gradient(map_get($color, bg-gradient), map_get($color, background));
+    z-index: -1;
+  }
+
+}

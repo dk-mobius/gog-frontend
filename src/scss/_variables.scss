@@ -1,0 +1,28 @@
+$color_scheme: (
+        body-text: #212121,
+        light-text: #404040,
+        reversed-text: #F2F2F2,
+        white: #FFFFFF,
+        background: #C1C1C1,
+        primary: #793DC5,
+        primary-lighter: #B559E1,
+        secondary: #008F5D,
+        card-background: #DDDDDD,
+        panel-background: #F7F7F7,
+        bg-gradient: #B8B3BF,
+        place-holder: #928E98
+);
+
+$dimensions_scheme: (
+        max-width: 106rem,
+        top-gap: 2.3rem,
+        site-header-height: 5.6rem,
+);
+
+$color: $color_scheme;
+$dimensions: $dimensions_scheme;
+$base-margin: 2rem;
+$button-radius: 0.4rem;
+
+$max-container-width: 106rem;
+

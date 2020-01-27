@@ -1,0 +1,31 @@
+// --- import variables ---
+@import 'variables';
+
+// --- import css class selectors to extend component classes ---
+@import 'extends/base-buttons';
+@import 'extends/base-card';
+@import 'extends/base-image';
+@import 'extends/base-tag';
+@import 'extends/placeholder-gradient';
+
+// --- import global non component-specific styling ---
+@import 'global/reset';
+@import 'global/rem-set';
+@import 'global/page';
+@import 'global/grid';
+@import 'global/typography';
+
+// --- import mixins ---
+
+
+// --- import component styling ---
+@import 'components/CartProduct';
+@import 'components/GameOfWeekBanner';
+@import 'components/Logo';
+@import 'components/MiniCart';
+@import 'components/ProductCard';
+@import 'components/SiteHeader';
+
+// --- import placeholder component styling ---
+@import 'placeholder/placeholder-banner';
+@import 'placeholder/placeholder-card';

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.21;
+  color: map_get($color, body-text);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: $base-margin;
+}

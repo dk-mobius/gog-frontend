@@ -1,0 +1,7 @@
+.base-card {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  background-color: map_get($color, card-background);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
+}
