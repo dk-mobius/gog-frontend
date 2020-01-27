@@ -18,7 +18,7 @@ const ProductCard = props => (
                         <div className={'product-card__discount'}>-{props.discount}%</div>
                         }
                         {props.owned ? <div className={'button'}>Owned</div> :
-                            <div tabIndex={0} className={'button'} data-product-id={props.productId}
+                            <div tabIndex={0} className={'button' + (props.incart ? '' : ' button--hover')} data-product-id={props.productId}
                                  onMouseDown={(e => e.preventDefault())}
                                  onClick={e => {
                                      e.preventDefault();

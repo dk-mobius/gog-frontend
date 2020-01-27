@@ -9,13 +9,24 @@
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
   color: map_get($color, light-text);
   font-size: 1.3rem;
+  background-color: map_get($color,card-background);
+  &--hover {
+    &:hover {
+      background-color: darken(map_get($color,card-background),10%);
+      transition: background-color 0.3s;
+    }
+  }
   &--primary {
     color: map_get($color, white);
     background-color: map_get($color, primary);
     background-image: linear-gradient(map_get($color, primary-lighter), map_get($color, primary));
-    padding: 1.4rem 2.1rem;
+    padding: 1.1rem 2.7rem;
     border: none;
     font-size: 1.4rem;
+    font-weight: normal;
+    &:hover {
+      background-image: none;
+    }
   }
 }
 

@@ -36,19 +36,20 @@
   &__panel {
     position: absolute;
     top: map_get($dimensions_scheme, site-header-height);
-    right: 0;
+    right: -9000;
     z-index: 2;
     width: 100%;
     max-width: 37rem;
-    height: 60rem;
     background-color: map_get($color, panel-background);
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-clip: padding-box;
     border-top: none;
-    display: none;
-
+    display: block;
+    opacity: 0;
     .is-active & {
-      display: block;
+      right: 0;
+      opacity: 1;
+      transition: opacity 0.5s;
     }
   }
   &__header {

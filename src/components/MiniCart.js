@@ -8,6 +8,7 @@ const MiniCart = () => {
     const cart = useContext(CartContext);
     const [cartToggle, setCartToggle] = useState(false);
     const [productIds, setProductIds] = useState([]);
+
     const toggleCart = () => setCartToggle(!cartToggle);
 
     const calculatePrice = products => {
@@ -40,18 +41,22 @@ const MiniCart = () => {
                             <div className={'mini-cart__count'}>{cart.products.length} Items in Cart</div>
                             <div
                                 className={'mini-cart__amount'}>{cart.products.length ? '$ ' + calculatePrice(cart.products) : null}</div>
-                            <button className={'clear-cart button button--primary'}
-                                    onClick={(e) => {
-                                        cart.clearCart()
-                                    }
-                                    }>Clear Cart
-                            </button>
+                            {cart.products.length ?
+                                <span className={'clear-cart button button--primary'}
+                                      onMouseDown={(e => e.preventDefault())}
+                                      onClick={(e) => {
+                                          e.preventDefault();
+                                          cart.clearCart()
+                                      }
+                                      }>Clear Cart
+                                </span> : null
+                            }
                         </div>
                         <ul>
                             {cart.products ? cart.products.map((product) =>
                                 <CartProduct key={product._id}
                                              productId={product._id}
-                                             title={product.title}
+                                             title={product.title.length > 25 ? product.title.substr(0,25) + '...'  : product.title}
                                              price={product.on_sale ? product.sale_price : product.price}
                                              image_url={product.featured_image_url}
                                              remove={cart.removeProduct}

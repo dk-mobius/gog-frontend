@@ -2,6 +2,12 @@ Hi there! Thank you for taking the time to review this solution to the provided 
 
 This prototype is up and running here: https://gog-test.netlify.com/
 
+My goal is to make clean reusable code that would be able to be expanded on.
+For this reason I chose to build with React and use a BEM style naming convention in components.
+The front end is completely decoupled from the backend allowing for the rapid development.
+Please reach out if you have any questions.
+Thanks!
+
 Devin Kendall | devin@dkportfolio.com
 
 #Stack
@@ -13,7 +19,7 @@ Devin Kendall | devin@dkportfolio.com
 #Notes
 
 * Used all function components thanks to React's new hooks. State management is being handled by React's useContext hook. 
-* Used BEM as a naming convention. 
+* Used BEM naming convention. 
 * Placeholder elements will display until child components mount.
 * Serving images from a CDN.
 
