@@ -40,7 +40,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --env.development --open --watch --progress --colors",
-    "build": "webpack"
+    "build": "webpack --production"
   },
   "eslintConfig": {
     "extends": "react-app"
