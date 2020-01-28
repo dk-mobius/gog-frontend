@@ -14,7 +14,7 @@ const MiniCart = () => {
     const calculatePrice = products => {
         let price = 0;
         products.forEach(product => {
-            price = product.on_sale.$numberDecimal ? price + parseFloat(product.sale_price.$numberDecimal) : price + parseFloat(product.price.$numberDecimal);
+            price = product.on_sale ? price + parseFloat(product.sale_price.$numberDecimal) : price + parseFloat(product.price.$numberDecimal);
         });
         return price.toFixed(2);
     };
