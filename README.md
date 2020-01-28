@@ -7,7 +7,7 @@ For this reason I chose to build with React and use a BEM style naming conventio
 The front end is completely decoupled from the backend allowing for the rapid development.
 Please reach out if you have any questions.
 
-Thanks!git 
+Thanks! 
 
 Devin Kendall | devin@dkportfolio.com
 
