@@ -13,7 +13,7 @@ const PromotedProducts = () => {
     },[]);
 
     return (
-        <div className={'row row--4'}>
+        <div className={'row row--5'}>
             {products.length ?
                 <UserContext.Consumer>
                     { user => (
